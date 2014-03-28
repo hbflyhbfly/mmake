@@ -8,8 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSTableViewDelegate>
+{
+    NSImage* editingImage;
+}
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSCollectionView *map;
+@property (assign) IBOutlet NSArrayController *arrayController;
+@property (assign) IBOutlet NSArrayController *imageArrayController;
+@property (assign) IBOutlet NSArrayController *mapArrayController;
+
 
 @end

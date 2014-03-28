@@ -7,18 +7,48 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
-@interface  AppDelegate()
-@property (nonatomic,strong) IBOutlet MainViewController *masterViewController;
-@end
+#import "AlexAppEntities.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
-    [self.window.contentView addSubview:self.masterViewController.view];
-    self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+
 }
 
+- (void)awakeFromNib
+{
+    
+    [_map setSelectable:YES];
+    [self gatherAppData];
+}
+
+- (void)gatherAppData
+{
+    @autoreleasepool{
+        for (int i = 0;i<6 ;i++){
+            AlexAppEntities *item = [[AlexAppEntities alloc]initWithTitle:@"sds" image:NULL] ;
+            [_mapArrayController addObject:item];
+        }
+    }
+    
+}
+
+
+- (void) acceptFilenameDrag:(NSString *) filename
+{
+    NSImage* i = [[NSImage alloc]initWithContentsOfFile:filename];
+    [_imageArrayController addObject:i];
+    
+    NSArray *SeparatedArray = [[NSArray alloc]init];
+    
+    SeparatedArray =[filename componentsSeparatedByString:@"/"];
+    
+    filename = [SeparatedArray lastObject];
+    [_arrayController addObject: filename];
+}
+
+-(void) updateEditMap:(NSImage*)image{
+    editingImage = image;
+}
 @end

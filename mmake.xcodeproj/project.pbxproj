@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2C537BF18E4343D00E5A85A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C537BE18E4343D00E5A85A /* MainViewController.m */; };
+		F2C537C518E527F000E5A85A /* AlexAppEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C537C418E527F000E5A85A /* AlexAppEntities.m */; };
+		F2C537C818E5290C00E5A85A /* AlexNSCollectionViewItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C537C718E5290C00E5A85A /* AlexNSCollectionViewItemView.m */; };
 		F2D4BD6518E3337C00FA3875 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4BD6418E3337C00FA3875 /* Cocoa.framework */; };
 		F2D4BD6F18E3337C00FA3875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BD6D18E3337C00FA3875 /* InfoPlist.strings */; };
 		F2D4BD7118E3337C00FA3875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD7018E3337C00FA3875 /* main.m */; };
@@ -19,9 +20,7 @@
 		F2D4BD8D18E3337C00FA3875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BD8B18E3337C00FA3875 /* InfoPlist.strings */; };
 		F2D4BD8F18E3337C00FA3875 /* mmakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD8E18E3337C00FA3875 /* mmakeTests.m */; };
 		F2D4BD9C18E3347400FA3875 /* DragDropTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD9918E3347400FA3875 /* DragDropTableView.m */; };
-		F2D4BD9D18E3347400FA3875 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD9B18E3347400FA3875 /* Controller.m */; };
 		F2D4BDA318E3D66F00FA3875 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BDA218E3D66F00FA3875 /* MapView.m */; };
-		F2D4BDA518E3E2EB00FA3875 /* 1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BDA418E3E2EB00FA3875 /* 1_1.png */; };
 		F2D4BDF918E4083200FA3875 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BDF818E4083200FA3875 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F2C537BD18E4343D00E5A85A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		F2C537BE18E4343D00E5A85A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F2C537C318E527F000E5A85A /* AlexAppEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexAppEntities.h; sourceTree = "<group>"; };
+		F2C537C418E527F000E5A85A /* AlexAppEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexAppEntities.m; sourceTree = "<group>"; };
+		F2C537C618E5290C00E5A85A /* AlexNSCollectionViewItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexNSCollectionViewItemView.h; sourceTree = "<group>"; };
+		F2C537C718E5290C00E5A85A /* AlexNSCollectionViewItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexNSCollectionViewItemView.m; sourceTree = "<group>"; };
 		F2D4BD6118E3337C00FA3875 /* mmake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D4BD6418E3337C00FA3875 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F2D4BD6718E3337C00FA3875 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -58,11 +59,8 @@
 		F2D4BD8E18E3337C00FA3875 /* mmakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmakeTests.m; sourceTree = "<group>"; };
 		F2D4BD9818E3347400FA3875 /* DragDropTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropTableView.h; sourceTree = "<group>"; };
 		F2D4BD9918E3347400FA3875 /* DragDropTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropTableView.m; sourceTree = "<group>"; };
-		F2D4BD9A18E3347400FA3875 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
-		F2D4BD9B18E3347400FA3875 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		F2D4BDA118E3D66F00FA3875 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		F2D4BDA218E3D66F00FA3875 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
-		F2D4BDA418E3E2EB00FA3875 /* 1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1.png; sourceTree = "<group>"; };
 		F2D4BDF818E4083200FA3875 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,20 +127,19 @@
 		F2D4BD6A18E3337C00FA3875 /* mmake */ = {
 			isa = PBXGroup;
 			children = (
+				F2C537C618E5290C00E5A85A /* AlexNSCollectionViewItemView.h */,
+				F2C537C718E5290C00E5A85A /* AlexNSCollectionViewItemView.m */,
+				F2C537C318E527F000E5A85A /* AlexAppEntities.h */,
+				F2C537C418E527F000E5A85A /* AlexAppEntities.m */,
 				F2D4BDF818E4083200FA3875 /* MainMenu.xib */,
-				F2D4BDA418E3E2EB00FA3875 /* 1_1.png */,
 				F2D4BD9818E3347400FA3875 /* DragDropTableView.h */,
 				F2D4BD9918E3347400FA3875 /* DragDropTableView.m */,
-				F2D4BD9A18E3347400FA3875 /* Controller.h */,
-				F2D4BD9B18E3347400FA3875 /* Controller.m */,
 				F2D4BD7618E3337C00FA3875 /* AppDelegate.h */,
 				F2D4BD7718E3337C00FA3875 /* AppDelegate.m */,
 				F2D4BD7C18E3337C00FA3875 /* Images.xcassets */,
 				F2D4BD6B18E3337C00FA3875 /* Supporting Files */,
 				F2D4BDA118E3D66F00FA3875 /* MapView.h */,
 				F2D4BDA218E3D66F00FA3875 /* MapView.m */,
-				F2C537BD18E4343D00E5A85A /* MainViewController.h */,
-				F2C537BE18E4343D00E5A85A /* MainViewController.m */,
 			);
 			path = mmake;
 			sourceTree = "<group>";
@@ -255,7 +252,6 @@
 			files = (
 				F2D4BD6F18E3337C00FA3875 /* InfoPlist.strings in Resources */,
 				F2D4BDF918E4083200FA3875 /* MainMenu.xib in Resources */,
-				F2D4BDA518E3E2EB00FA3875 /* 1_1.png in Resources */,
 				F2D4BD7D18E3337C00FA3875 /* Images.xcassets in Resources */,
 				F2D4BD7518E3337C00FA3875 /* Credits.rtf in Resources */,
 			);
@@ -277,11 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D4BD7818E3337C00FA3875 /* AppDelegate.m in Sources */,
-				F2C537BF18E4343D00E5A85A /* MainViewController.m in Sources */,
 				F2D4BDA318E3D66F00FA3875 /* MapView.m in Sources */,
 				F2D4BD7118E3337C00FA3875 /* main.m in Sources */,
 				F2D4BD9C18E3347400FA3875 /* DragDropTableView.m in Sources */,
-				F2D4BD9D18E3347400FA3875 /* Controller.m in Sources */,
+				F2C537C818E5290C00E5A85A /* AlexNSCollectionViewItemView.m in Sources */,
+				F2C537C518E527F000E5A85A /* AlexAppEntities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

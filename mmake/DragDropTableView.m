@@ -7,7 +7,10 @@
     [super awakeFromNib];
 	[self registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, nil]];
     [self setTarget:self];
+    //[self setDataSource:self];
+
     [self setAcceptsTouchEvents:YES];
+    [self setAction:NSSelectorFromString(@"doubleClick:")];
     
 }
 
@@ -60,11 +63,16 @@
 	return NO;
 }	
 
--(void)touchesBeganWithEvent:(NSEvent *)event{
-    //static NSString *MyIdentifier = @"name"; //相当于一个行标识
-    //NSTableCellView *cellView = [self makeViewWithIdentifier:MyIdentifier owner:self];
+- (void) doubleClick: (id)sender
+
+{
     
-   
+    NSInteger rowNumber = [self clickedRow];
+    NSTableColumn* images = [self tableColumnWithIdentifier:@"image"];
+    NSImage* image = (NSImage*)[images dataCellForRow:rowNumber];
+    [[self delegate] performSelector:@selector(updateMapArray:) withObject:image];
+    NSLog(@"Double Clicked.%@ ",image);
+    
 }
 
 @end

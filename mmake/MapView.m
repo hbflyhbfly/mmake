@@ -14,11 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
-        NSImage* a = [NSImage imageNamed:@"1_1.png"];
-        NSImageView* b = [[NSImageView alloc]init];
-        b.image = a;
-        [self addSubview:b];
+      
     }
     return self;
 }
@@ -28,10 +24,6 @@
     [super drawRect:dirtyRect];
     
     // Drawing code here.
-}
-
--(void)touchesBeganWithEvent:(NSEvent *)event{
-    
 }
 
 @end

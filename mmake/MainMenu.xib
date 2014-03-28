@@ -4,45 +4,30 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController">
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
             <connections>
-                <outlet property="map" destination="hbn-Cn-8eh" id="Vcc-DL-Yr3"/>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="6KU-Tu-4SH"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="masterViewController" destination="-2" id="Ufj-16-G8l"/>
+                <outlet property="arrayController" destination="i57-Hk-RkR" id="BjM-1G-IqP"/>
+                <outlet property="imageArrayController" destination="8Ve-Cl-0vg" id="Ks3-GE-LmP"/>
+                <outlet property="map" destination="hbn-Cn-8eh" id="dKz-x9-Z1E"/>
+                <outlet property="mapArrayController" destination="qCe-az-tyg" id="BzT-ck-O0V"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <arrayController id="i57-Hk-RkR">
-            <connections>
-                <binding destination="SYT-bg-CCN" name="contentArray" keyPath="filenames" id="5MZ-CT-gbq"/>
-            </connections>
-        </arrayController>
-        <arrayController id="aOs-BZ-1AI" userLabel="Map Array Controller">
+        <arrayController id="i57-Hk-RkR"/>
+        <arrayController objectClassName="" id="8Ve-Cl-0vg" userLabel="Image Array Controller">
             <declaredKeys>
-                <string>Key</string>
+                <string>image</string>
+                <string>name</string>
             </declaredKeys>
-            <connections>
-                <binding destination="SYT-bg-CCN" name="contentArray" keyPath="mapImages" id="PPt-ou-XLv"/>
-            </connections>
         </arrayController>
-        <arrayController id="8Ve-Cl-0vg" userLabel="Image Array Controller">
-            <connections>
-                <binding destination="SYT-bg-CCN" name="contentArray" keyPath="images" id="Cj7-jU-uhI"/>
-            </connections>
-        </arrayController>
-        <customObject id="SYT-bg-CCN" userLabel="Controller" customClass="Controller">
-            <connections>
-                <outlet property="arrayController" destination="i57-Hk-RkR" id="4TV-LG-esX"/>
-                <outlet property="imageArrayController" destination="8Ve-Cl-0vg" id="IKH-gW-4Qe"/>
-                <outlet property="mapImageArrayController" destination="aOs-BZ-1AI" id="2b1-Y5-V0T"/>
-            </connections>
-        </customObject>
         <window title="mmake" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -53,7 +38,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjY-Vh-M3E">
-                        <rect key="frame" x="20" y="30" width="213" height="550"/>
+                        <rect key="frame" x="26" y="30" width="213" height="550"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <clipView key="contentView" ambiguous="YES" misplaced="YES" id="6w0-7i-lt8">
                             <rect key="frame" x="1" y="17" width="211" height="532"/>
@@ -79,7 +64,11 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <connections>
-                                                <binding destination="i57-Hk-RkR" name="value" keyPath="arrangedObjects" id="Xng-Kv-e8u"/>
+                                                <binding destination="i57-Hk-RkR" name="value" keyPath="arrangedObjects" id="ov7-YJ-UZH">
+                                                    <dictionary key="options">
+                                                        <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
                                             </connections>
                                         </tableColumn>
                                         <tableColumn identifier="image" editable="NO" width="105" minWidth="10" maxWidth="3.4028234663852886e+38" id="u28-re-ukd">
@@ -91,19 +80,19 @@
                                             <imageCell key="dataCell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Lu1-5r-zJC"/>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <connections>
-                                                <binding destination="8Ve-Cl-0vg" name="value" keyPath="arrangedObjects" id="iUA-Ys-EUV"/>
+                                                <binding destination="8Ve-Cl-0vg" name="value" keyPath="arrangedObjects" id="VIx-eD-iIB"/>
                                             </connections>
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <outlet property="delegate" destination="SYT-bg-CCN" id="VT4-oy-uis"/>
+                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="1CR-G5-F11"/>
                                     </connections>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Ndr-1q-SuH">
-                            <rect key="frame" x="1" y="1" width="0.0" height="16"/>
+                            <rect key="frame" x="1" y="533" width="211" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="zzP-ME-bT2">
@@ -115,30 +104,33 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
-                    <scrollView fixedFrame="YES" borderType="line" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" scrollerKnobStyle="light" translatesAutoresizingMaskIntoConstraints="NO" id="TzJ-pG-Wlc">
+                    <scrollView fixedFrame="YES" borderType="line" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="light" findBarPosition="belowContent" translatesAutoresizingMaskIntoConstraints="NO" id="TzJ-pG-Wlc">
                         <rect key="frame" x="280" y="290" width="451" height="290"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <clipView key="contentView" ambiguous="YES" misplaced="YES" id="HSk-1c-SvT">
                             <rect key="frame" x="1" y="1" width="449" height="288"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <collectionView ambiguous="YES" selectable="YES" allowsMultipleSelection="YES" id="hbn-Cn-8eh" customClass="MapView">
+                                <collectionView ambiguous="YES" selectable="YES" allowsMultipleSelection="YES" maxNumberOfRows="6" maxNumberOfColumns="12" id="hbn-Cn-8eh" customClass="MapView">
                                     <rect key="frame" x="0.0" y="0.0" width="449" height="288"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
-                                        <outlet property="delegate" destination="SYT-bg-CCN" id="Rrm-dj-PJu"/>
+                                        <binding destination="qCe-az-tyg" name="content" keyPath="arrangedObjects" id="a3t-qz-w1x"/>
+                                        <binding destination="qCe-az-tyg" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="a3t-qz-w1x" id="TUO-gn-DhO"/>
+                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="xpQ-ia-VQN"/>
+                                        <outlet property="itemPrototype" destination="ppK-66-Qwn" id="rg0-Ry-Cjh"/>
                                     </connections>
                                 </collectionView>
                             </subviews>
                             <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gAr-Wj-jbk">
-                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                            <rect key="frame" x="-100" y="-100" width="233" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="l7d-kO-bCm">
-                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                            <rect key="frame" x="-100" y="-100" width="15" height="143"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
@@ -153,24 +145,34 @@
                 </subviews>
             </view>
         </window>
-        <collectionViewItem id="ppK-66-Qwn">
+        <collectionViewItem id="ppK-66-Qwn" customClass="ALExNSCollectionVIewItem">
             <connections>
-                <outlet property="imageView" destination="mdN-Ru-W33" id="hVe-DU-TBD"/>
+                <outlet property="view" destination="FKt-RV-Gax" id="bIC-V4-yAU"/>
             </connections>
         </collectionViewItem>
-        <view id="FKt-RV-Gax">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+        <view id="FKt-RV-Gax" customClass="AlexNSCollectionViewItemView">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="49"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdN-Ru-W33">
-                    <rect key="frame" x="-3" y="-3" width="106" height="106"/>
+                    <rect key="frame" x="-3" y="-2" width="60" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="peN-zw-IzC"/>
                     <connections>
-                        <binding destination="aOs-BZ-1AI" name="value" keyPath="arrangedObjects" id="4Wo-K5-lwL"/>
+                        <binding destination="ppK-66-Qwn" name="value" keyPath="representedObject.image" id="50U-8F-pOP"/>
                     </connections>
                 </imageView>
             </subviews>
+        </view>
+        <arrayController id="qCe-az-tyg" userLabel="Map Array Controller"/>
+        <collectionViewItem id="V6S-YE-mQE">
+            <connections>
+                <outlet property="view" destination="IIA-qm-xOX" id="X6h-lh-QVi"/>
+            </connections>
+        </collectionViewItem>
+        <view id="IIA-qm-xOX">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
         </view>
     </objects>
 </document>
