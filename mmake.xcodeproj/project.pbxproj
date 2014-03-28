@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2C537BF18E4343D00E5A85A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C537BE18E4343D00E5A85A /* MainViewController.m */; };
+		F2D4BD6518E3337C00FA3875 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4BD6418E3337C00FA3875 /* Cocoa.framework */; };
+		F2D4BD6F18E3337C00FA3875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BD6D18E3337C00FA3875 /* InfoPlist.strings */; };
+		F2D4BD7118E3337C00FA3875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD7018E3337C00FA3875 /* main.m */; };
+		F2D4BD7518E3337C00FA3875 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BD7318E3337C00FA3875 /* Credits.rtf */; };
+		F2D4BD7818E3337C00FA3875 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD7718E3337C00FA3875 /* AppDelegate.m */; };
+		F2D4BD7D18E3337C00FA3875 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BD7C18E3337C00FA3875 /* Images.xcassets */; };
+		F2D4BD8418E3337C00FA3875 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4BD8318E3337C00FA3875 /* XCTest.framework */; };
+		F2D4BD8518E3337C00FA3875 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4BD6418E3337C00FA3875 /* Cocoa.framework */; };
+		F2D4BD8D18E3337C00FA3875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BD8B18E3337C00FA3875 /* InfoPlist.strings */; };
+		F2D4BD8F18E3337C00FA3875 /* mmakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD8E18E3337C00FA3875 /* mmakeTests.m */; };
+		F2D4BD9C18E3347400FA3875 /* DragDropTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD9918E3347400FA3875 /* DragDropTableView.m */; };
+		F2D4BD9D18E3347400FA3875 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BD9B18E3347400FA3875 /* Controller.m */; };
+		F2D4BDA318E3D66F00FA3875 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4BDA218E3D66F00FA3875 /* MapView.m */; };
+		F2D4BDA518E3E2EB00FA3875 /* 1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BDA418E3E2EB00FA3875 /* 1_1.png */; };
+		F2D4BDF918E4083200FA3875 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D4BDF818E4083200FA3875 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2D4BD8618E3337C00FA3875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D4BD5918E3337C00FA3875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D4BD6018E3337C00FA3875;
+			remoteInfo = mmake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2C537BD18E4343D00E5A85A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F2C537BE18E4343D00E5A85A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F2D4BD6118E3337C00FA3875 /* mmake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D4BD6418E3337C00FA3875 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F2D4BD6718E3337C00FA3875 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F2D4BD6818E3337C00FA3875 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F2D4BD6918E3337C00FA3875 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2D4BD6C18E3337C00FA3875 /* mmake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mmake-Info.plist"; sourceTree = "<group>"; };
+		F2D4BD6E18E3337C00FA3875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2D4BD7018E3337C00FA3875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2D4BD7218E3337C00FA3875 /* mmake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mmake-Prefix.pch"; sourceTree = "<group>"; };
+		F2D4BD7418E3337C00FA3875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F2D4BD7618E3337C00FA3875 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2D4BD7718E3337C00FA3875 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2D4BD7C18E3337C00FA3875 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2D4BD8218E3337C00FA3875 /* mmakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mmakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D4BD8318E3337C00FA3875 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2D4BD8A18E3337C00FA3875 /* mmakeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mmakeTests-Info.plist"; sourceTree = "<group>"; };
+		F2D4BD8C18E3337C00FA3875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2D4BD8E18E3337C00FA3875 /* mmakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmakeTests.m; sourceTree = "<group>"; };
+		F2D4BD9818E3347400FA3875 /* DragDropTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropTableView.h; sourceTree = "<group>"; };
+		F2D4BD9918E3347400FA3875 /* DragDropTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropTableView.m; sourceTree = "<group>"; };
+		F2D4BD9A18E3347400FA3875 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		F2D4BD9B18E3347400FA3875 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		F2D4BDA118E3D66F00FA3875 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		F2D4BDA218E3D66F00FA3875 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		F2D4BDA418E3E2EB00FA3875 /* 1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_1.png; sourceTree = "<group>"; };
+		F2D4BDF818E4083200FA3875 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2D4BD5E18E3337C00FA3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4BD6518E3337C00FA3875 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D4BD7F18E3337C00FA3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4BD8518E3337C00FA3875 /* Cocoa.framework in Frameworks */,
+				F2D4BD8418E3337C00FA3875 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2D4BD5818E3337C00FA3875 = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD6A18E3337C00FA3875 /* mmake */,
+				F2D4BD8818E3337C00FA3875 /* mmakeTests */,
+				F2D4BD6318E3337C00FA3875 /* Frameworks */,
+				F2D4BD6218E3337C00FA3875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2D4BD6218E3337C00FA3875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD6118E3337C00FA3875 /* mmake.app */,
+				F2D4BD8218E3337C00FA3875 /* mmakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2D4BD6318E3337C00FA3875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD6418E3337C00FA3875 /* Cocoa.framework */,
+				F2D4BD8318E3337C00FA3875 /* XCTest.framework */,
+				F2D4BD6618E3337C00FA3875 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2D4BD6618E3337C00FA3875 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD6718E3337C00FA3875 /* AppKit.framework */,
+				F2D4BD6818E3337C00FA3875 /* CoreData.framework */,
+				F2D4BD6918E3337C00FA3875 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F2D4BD6A18E3337C00FA3875 /* mmake */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BDF818E4083200FA3875 /* MainMenu.xib */,
+				F2D4BDA418E3E2EB00FA3875 /* 1_1.png */,
+				F2D4BD9818E3347400FA3875 /* DragDropTableView.h */,
+				F2D4BD9918E3347400FA3875 /* DragDropTableView.m */,
+				F2D4BD9A18E3347400FA3875 /* Controller.h */,
+				F2D4BD9B18E3347400FA3875 /* Controller.m */,
+				F2D4BD7618E3337C00FA3875 /* AppDelegate.h */,
+				F2D4BD7718E3337C00FA3875 /* AppDelegate.m */,
+				F2D4BD7C18E3337C00FA3875 /* Images.xcassets */,
+				F2D4BD6B18E3337C00FA3875 /* Supporting Files */,
+				F2D4BDA118E3D66F00FA3875 /* MapView.h */,
+				F2D4BDA218E3D66F00FA3875 /* MapView.m */,
+				F2C537BD18E4343D00E5A85A /* MainViewController.h */,
+				F2C537BE18E4343D00E5A85A /* MainViewController.m */,
+			);
+			path = mmake;
+			sourceTree = "<group>";
+		};
+		F2D4BD6B18E3337C00FA3875 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD6C18E3337C00FA3875 /* mmake-Info.plist */,
+				F2D4BD6D18E3337C00FA3875 /* InfoPlist.strings */,
+				F2D4BD7018E3337C00FA3875 /* main.m */,
+				F2D4BD7218E3337C00FA3875 /* mmake-Prefix.pch */,
+				F2D4BD7318E3337C00FA3875 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2D4BD8818E3337C00FA3875 /* mmakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD8E18E3337C00FA3875 /* mmakeTests.m */,
+				F2D4BD8918E3337C00FA3875 /* Supporting Files */,
+			);
+			path = mmakeTests;
+			sourceTree = "<group>";
+		};
+		F2D4BD8918E3337C00FA3875 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4BD8A18E3337C00FA3875 /* mmakeTests-Info.plist */,
+				F2D4BD8B18E3337C00FA3875 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2D4BD6018E3337C00FA3875 /* mmake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D4BD9218E3337C00FA3875 /* Build configuration list for PBXNativeTarget "mmake" */;
+			buildPhases = (
+				F2D4BD5D18E3337C00FA3875 /* Sources */,
+				F2D4BD5E18E3337C00FA3875 /* Frameworks */,
+				F2D4BD5F18E3337C00FA3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mmake;
+			productName = mmake;
+			productReference = F2D4BD6118E3337C00FA3875 /* mmake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2D4BD8118E3337C00FA3875 /* mmakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D4BD9518E3337C00FA3875 /* Build configuration list for PBXNativeTarget "mmakeTests" */;
+			buildPhases = (
+				F2D4BD7E18E3337C00FA3875 /* Sources */,
+				F2D4BD7F18E3337C00FA3875 /* Frameworks */,
+				F2D4BD8018E3337C00FA3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2D4BD8718E3337C00FA3875 /* PBXTargetDependency */,
+			);
+			name = mmakeTests;
+			productName = mmakeTests;
+			productReference = F2D4BD8218E3337C00FA3875 /* mmakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2D4BD5918E3337C00FA3875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "周飞";
+				TargetAttributes = {
+					F2D4BD8118E3337C00FA3875 = {
+						TestTargetID = F2D4BD6018E3337C00FA3875;
+					};
+				};
+			};
+			buildConfigurationList = F2D4BD5C18E3337C00FA3875 /* Build configuration list for PBXProject "mmake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2D4BD5818E3337C00FA3875;
+			productRefGroup = F2D4BD6218E3337C00FA3875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2D4BD6018E3337C00FA3875 /* mmake */,
+				F2D4BD8118E3337C00FA3875 /* mmakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2D4BD5F18E3337C00FA3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4BD6F18E3337C00FA3875 /* InfoPlist.strings in Resources */,
+				F2D4BDF918E4083200FA3875 /* MainMenu.xib in Resources */,
+				F2D4BDA518E3E2EB00FA3875 /* 1_1.png in Resources */,
+				F2D4BD7D18E3337C00FA3875 /* Images.xcassets in Resources */,
+				F2D4BD7518E3337C00FA3875 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D4BD8018E3337C00FA3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4BD8D18E3337C00FA3875 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2D4BD5D18E3337C00FA3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4BD7818E3337C00FA3875 /* AppDelegate.m in Sources */,
+				F2C537BF18E4343D00E5A85A /* MainViewController.m in Sources */,
+				F2D4BDA318E3D66F00FA3875 /* MapView.m in Sources */,
+				F2D4BD7118E3337C00FA3875 /* main.m in Sources */,
+				F2D4BD9C18E3347400FA3875 /* DragDropTableView.m in Sources */,
+				F2D4BD9D18E3347400FA3875 /* Controller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D4BD7E18E3337C00FA3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4BD8F18E3337C00FA3875 /* mmakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2D4BD8718E3337C00FA3875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D4BD6018E3337C00FA3875 /* mmake */;
+			targetProxy = F2D4BD8618E3337C00FA3875 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2D4BD6D18E3337C00FA3875 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D4BD6E18E3337C00FA3875 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2D4BD7318E3337C00FA3875 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D4BD7418E3337C00FA3875 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F2D4BD8B18E3337C00FA3875 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D4BD8C18E3337C00FA3875 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2D4BD9018E3337C00FA3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F2D4BD9118E3337C00FA3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F2D4BD9318E3337C00FA3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mmake/mmake-Prefix.pch";
+				INFOPLIST_FILE = "mmake/mmake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2D4BD9418E3337C00FA3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mmake/mmake-Prefix.pch";
+				INFOPLIST_FILE = "mmake/mmake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2D4BD9618E3337C00FA3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mmake.app/Contents/MacOS/mmake";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mmake/mmake-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "mmakeTests/mmakeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2D4BD9718E3337C00FA3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mmake.app/Contents/MacOS/mmake";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mmake/mmake-Prefix.pch";
+				INFOPLIST_FILE = "mmakeTests/mmakeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2D4BD5C18E3337C00FA3875 /* Build configuration list for PBXProject "mmake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4BD9018E3337C00FA3875 /* Debug */,
+				F2D4BD9118E3337C00FA3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D4BD9218E3337C00FA3875 /* Build configuration list for PBXNativeTarget "mmake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4BD9318E3337C00FA3875 /* Debug */,
+				F2D4BD9418E3337C00FA3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D4BD9518E3337C00FA3875 /* Build configuration list for PBXNativeTarget "mmakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4BD9618E3337C00FA3875 /* Debug */,
+				F2D4BD9718E3337C00FA3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2D4BD5918E3337C00FA3875 /* Project object */;
+}
